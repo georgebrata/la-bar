@@ -1,4 +1,8 @@
-# vue3-tailwind3-template
+# la-bar
+
+Mobile-first bartender helper webapp 🍹 powered by vue3
+Read (vue3 docs)[https://vuejs.org/guide/introduction.html] for more info.
+
 
 ## Project setup
 ```

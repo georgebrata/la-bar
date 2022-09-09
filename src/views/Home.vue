@@ -1,6 +1,6 @@
 <template>
 <div class="w-full flex justify-center">
-<input placeholder="Enter Pokemon here" type="text" 
+<input placeholder="Search ingredient ..." type="text" 
     class="mt-10 p-2 border-blue-500 border-2" v-model="text" />
 
 </div>
