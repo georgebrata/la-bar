@@ -1,26 +1,22 @@
-<template>
-  <div class="p-14">
-    <router-link class="flex justify-center text-4xl text-red-800" to="/">
-      La Bar 🍹
-    </router-link>
-    <div class="h-100 overflow-auto p-4">
-      <router-view />
-
-    </div>
-    <Footer></Footer>
-  </div>
-</template>
-
-<script>
-import Footer from '@/components/Footer.vue'
-
-export default {
-    name: 'App',
-    components: {
-        Footer,
-        // UsersList
-    }
-}
+<script setup>
+import { RouterView } from "vue-router";
+import ThemeChanger from "./components/ThemeChanger.vue";
+import HelloDaisy from "./components/HelloDaisy.vue";
+import Header from "./components/Header.vue";
 </script>
 
-<style></style>
+<template>
+  <header>
+    <div
+      class="wrapper flex flex-col mx-auto w-full items-center justify-center m-8"
+    >
+      <HelloDaisy />
+      <!-- <img alt="Vue logo" class="logo pb-8" src="@/assets/logo.svg" width="125" height="125" /> -->
+      <div class="fixed top-2 right-2">
+        <ThemeChanger />
+      </div>
+      <Header />
+    </div>
+  </header>
+  <RouterView />
+</template>
